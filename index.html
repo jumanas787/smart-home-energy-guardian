@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Home Energy Guardian</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>⚡ Smart Home Energy Guardian</h1>
+    <p>Monitor your home's energy consumption.</p>
+
+    <h2 id="greeting"></h2>
+    <p id="summary"></p>
+    <p id="clock"></p>
+
+    <h2>Family Members</h2>
+    <div id="people"></div>
+
+    <h2>Energy Overview</h2>
+    <p>Live power: <span id="live-watts"></span></p>
+    <p>Status: <span id="live-badge"></span></p>
+    <p>Today: <span id="kwh-today"></span> kWh</p>
+    <p>Cost today: <span id="cost-today"></span></p>
+    <p>Monthly estimate: <span id="cost-month"></span></p>
+
+    <label>Price per kWh:
+      <input id="rate-input" type="number" value="0.15" step="0.01">
+    </label>
+
+    <h2>Alerts</h2>
+    <div id="alerts"></div>
+
+    <h2 id="chart-title"></h2>
+    <button id="day-btn">Day</button>
+    <button id="week-btn">Week</button>
+    <div id="chart"></div>
+    <div id="chart-labels"></div>
+    <p id="chart-note"></p>
+
+    <h2>Rooms</h2>
+    <div id="rooms"></div>
+
+    <h2>Devices</h2>
+    <div id="devices"></div>
+
+    <h2>Energy Saving Tips</h2>
+    <div id="tips"></div>
+
+    <button id="spike-btn">Simulate High Usage</button>
+    <button id="reset-btn">Reset Demo</button>
+
+    <button id="phone-view-btn">Phone View</button>
+    <button id="display-view-btn">Display View</button>
+  </main>
+</body>
+</html>
